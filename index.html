@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="按钮" id="btn">
+</body>
+</html>
+<script src="./vquery.js"></script>
+<script>
+    // 此处放的是逻辑层的东西，而vquery中写的都是具体的底层业务逻辑，将业务逻辑封装成函数，并开放接口供上层函数（逻辑应用层）使用；
+    new Vquery(function(){
+        var text = 'catdasfds, bat, sat, fat';
+        
+        result = text.replace(/(.(a))/g, 'word($)');
+
+        console.log(result);
+       
+
+    });
+</script>
